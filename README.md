@@ -24,6 +24,13 @@ Golang Caching libraries:
 * golang-lru - github.com/hashicorp/golang-lru . Golang LRU cache. This provides the lru package which implements a fixed-size thread safe LRU cache. It is based on the cache in Groupcache.
 * rend - github.com/Netflix/rend . A memcached proxy that manages data chunking and L1 / L2 caches.
 * Mango cache - github.com/goburrow/cache . Mango Cache - Partial implementations of Guava Cache in Go.
+* ttlcache - github.com/ReneKroon/ttlcache . An in-memory string-interface{} map with various expiration options for golang.
+    * TTLCache is a simple key/value cache in golang with the following functions:
+        * Thread-safe
+        * Individual expiring time or global expiring time, you can choose
+        * Auto-Extending expiration on Get -or- DNS style TTL, see SkipTtlExtensionOnHit(bool)
+        * Fast and memory efficient
+        * Can trigger callback on key expiration
 
 
 
